@@ -1,3 +1,10 @@
+# Colin Kierans
+Hi! I'm Colin "Vindexus" Kierans and this is the repository for my personal website: https://colinkierans.com
+
+Everything below this line comes from the boilerplate I based this website off of.
+
+---
+
 # Astro Boilerplate with TypeScript and Tailwind CSS [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 🚀 Astro Boilerplate is starter code for your blog or portfolio based on Astro

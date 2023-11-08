@@ -1,0 +1,28 @@
+---
+import Base from '@/templates/Base.astro';
+import {
+  Section,
+} from 'astro-boilerplate-components';
+
+const title = "Colin Kierans's Hobbies"
+const description = "Things I enjoy."
+console.log('hi im server');
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <h1 class="text-xl font-bold">Colin Kierans's Hobbies</h1>
+    <p>Here are some of the things I enjoy doing:</p>
+
+    <ul class="list-disc list-inside">
+      <li>Video games</li>
+      <li>Board games</li>
+      <li>Roleplaying games</li>
+      <li>Game design</li>
+      <li>Reading</li>
+      <li>Coding</li>
+      <li>Hiking</li>
+      <li>Woodworking</li>
+    </ul>
+  </Section>
+</Base>

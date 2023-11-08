@@ -8,7 +8,8 @@
         "singleQuote": true,
         "endOfLine": "auto"
       }
-    ]
+    ],
+    "no-plusplus": "off"
   },
   "overrides": [
     // Configuration for mjs files
