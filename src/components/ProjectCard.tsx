@@ -10,7 +10,7 @@ export type Project = {
   url: string;
   tags: string[];
   description: string;
-  thumb: string;
+  year?: number | string;
 };
 
 const tagColors: Record<string, Values<typeof ColorTags>> = {};
@@ -82,6 +82,7 @@ const ProjectCard = (props: IProjectProps) => {
                 </Tags>
               );
             })}
+						{project.year && <Tags color={ColorTags.GRAY}>{project.year}</Tags>}
           </div>
         </div>
         <p className="mt-3 text-gray-400">{description}</p>

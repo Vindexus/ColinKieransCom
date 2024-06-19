@@ -19,7 +19,11 @@ const Hero = () => (
           experience with up-and-coming developers.
         </>
       }
-      avatar={<></>}
+			avatar={
+				<>
+					<img src={'/colinface.png'} alt={'Colin Kierans'} />
+				</>
+			}
       socialButtons={<></>}
     />
   </Section>

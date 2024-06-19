@@ -10,6 +10,8 @@ export interface Props {
   };
 }
 
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
 const {
   head: { title, description },
 } = Astro.props as Props;
@@ -22,10 +24,10 @@ const {
     <title>{title}</title>
     <meta name='description' content={description} />
     <meta name='author' content={AppConfig.author} />
+    <link rel='canonical' href={canonicalURL} />
 
     <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
-
   </head>
   <body class='bg-slate-900 text-gray-100'>
     <Navbar />
@@ -33,12 +35,15 @@ const {
     <slot></slot>
 
     <Footer />
+    <script async defer src='https://scripts.withcabin.com/hello.js'>
+
+    </script>
   </body>
 </html>
 
 <style is:global>
   .hover:translate-y-1 {
-		border: 1px solid red;
+    border: 1px solid red;
     transition: transform 0.25s ease;
     transform: translateY(0px);
   }

@@ -9,7 +9,7 @@ import { astroImageTools } from 'astro-imagetools';
 export default defineConfig({
   // base: '.', // Set a path prefix.
   site: 'https://colinkierans.com/', // Use to generate your sitemap and canonical URLs in your final build.
-  trailingSlash: 'always', // Use to always append '/' at end of url
+  trailingSlash: 'ignore', // Use to always append '/' at end of url
   markdown: {
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
@@ -17,6 +17,7 @@ export default defineConfig({
       theme: 'monokai',
     },
   },
+	output: 'static',
   integrations: [
     react(),
     tailwind({}),
