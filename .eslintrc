@@ -88,8 +88,7 @@
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
-        ],
-        "indent": ["error", "tab"]
+        ]
       }
     },
     // Configuration for Astro
